@@ -8,13 +8,7 @@ monthly_gross_salary = monthly_basic_salary + monthly_allowances
 annual_bonus = (monthly_gross_salary * 12) * (bonus_percentage / 100)
 annual_gross_salary = (monthly_gross_salary * 12) + annual_bonus
 
-'''
-print("Employee ID = ", id)
-print("Employee Name = ", name)
-print("Monthly Gross Salary = ", monthly_gross_salary)
-print("Annual Gross Salary = ", annual_gross_salary)
-'''
 
-print('%-6s %-15s %-7s %-15s %s ' %('ID', 'NAME', 'BONUS', 'MONTHLY_SALARY', 'ANNAUL_SALARY'))
-print('-' * 80)
-print('%-6d %-15s %-6.2f%% %15.2f %.2f' %(id, name, bonus_percentage, monthly_gross_salary, annual_gross_salary))
+standard_deduction = 50000
+taxable_income = annual_gross_salary - standard_deduction
+print('Taxable income = ', taxable_income)
