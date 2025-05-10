@@ -23,3 +23,19 @@ print('%7d - %7d %3d%%' %(600001, 900000, 10))
 print('%7d - %7d %3d%%' %(900001, 1200000, 15))
 print('%7d - %7d %3d%%' %(1200001, 1500000, 20))
 print('%7d - %7s %3d%%' %(1500001, 'Or More', 30))
+print("\nHealth and Education Cess :", health_and_education_cess, "%")
+
+if taxable_income > 0 and taxable_income < 300000:
+    totaly_payable_tax = taxable_income * (0 + 0.04)
+elif taxable_income > 300001 and taxable_income < 600000:
+    totaly_payable_tax = taxable_income * (0.05 + 0.04)
+elif taxable_income > 600001 and taxable_income < 900000:
+    totaly_payable_tax = taxable_income * (0.1 + 0.04)
+elif taxable_income > 700001 and taxable_income < 1200000:
+    totaly_payable_tax = taxable_income * (0.15 + 0.04)
+elif taxable_income > 1200001 and taxable_income < 1500000:
+    totaly_payable_tax = taxable_income * (0.2 + 0.04)
+elif taxable_income > 1500001:
+    totaly_payable_tax = taxable_income * (0.3 + 0.04)
+
+print("Total Tax Payable: ", totaly_payable_tax)
